@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+li {
+    color: var(--texclr);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bakclr);
+}
+
+:root {
+    --texclr: rgb(128, 128, 128);
+    --bakclr: rgb(211, 211, 211);
+    --delclr: rgb(252, 52, 52);
+    --addclr: rgb(80, 251, 80);
+    --delhv:  rgb(239, 22, 22);
+}
+
+.heading {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-container .f-container {
+    width: 100%;
+}
+
+.main-container .f-container .input-container {
+    margin: 5px;
+    padding: 20px;
+}
+
+.add-list-btn {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: solid;
+}
+
+.add-list-btn button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: var(--addclr);
+    transition: 0.5s ease;
+}
+
+.add-list-btn button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.main-list {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-list ul {
+    margin-bottom: 100px;
+}
+
+.main-list ul li {
+    color: var(--texclr);
+    border: solid;
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#test-inputs {
+    background-color: var(--bakclr);
+    border-top: none;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    width: 100%;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: rgb(147, 237, 147);
+    /* background-color: blue; */
+}
+
+.delete {
+    background-color: var(--delclr);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+.delete:hover {
+    background-color: var(--delhv);
+    cursor: pointer;
+}
